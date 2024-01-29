@@ -1,0 +1,753 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    font-family:serif;
+    /* font-family: 'Tangerine', serif; */
+font-size: 48px;
+text-shadow: 4px 4px 4px #aaa;
+}
+
+*/ .container {
+    width: 90%;
+    /* background-color: red; */
+    margin: auto;
+}
+
+.navcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    /* background-color: green; */
+    background-color: white;
+    width: 100%;
+    padding: 0 5%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navlinks span {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.navlinks span:hover {
+    color: brown;
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: lighter;
+    color: red;
+}
+
+.header {
+    background: url('../images/header.png');
+    background-color: #d9d8d6;
+    height: 80vh;
+    border-radius: 20px;
+    background-size: cover;
+    /*cover, contain, 800px 700px ...*/
+    background-repeat: no-repeat;
+    /* background-position: 100px -40px;  */
+    /*right center, left center, center, top, bottom, */
+    padding: 60px;
+    position: relative;
+    top: 100px;
+}
+
+.headercontent {
+    width: 50%;
+    /* margin: auto; */
+    height: 450px;
+    display: flex;
+    align-items: center;
+}
+
+.calendercontainer {
+    display: block;
+    padding: 10px;
+    /* background-color: green; */
+    position: absolute;
+    /* left: 0; */
+    right: 60px;
+    bottom: 0px;
+    border-radius: 20px;
+    width: 200px;
+}
+
+.calendercontainer div:nth-child(1) {
+    background-color: #FF5500;
+    color: white;
+    padding: 20px 30px;
+    font-size: 23px;
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.calendercontainer div:nth-child(2) {
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    /* border-radius: 10px; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.headercontent h2 {
+    color: brown;
+    font-size: 40px;
+}
+
+.headercontent h1 {
+    color: white;
+    font-size: 65px;
+    font-weight: 100;
+}
+
+.headercontent p {
+    color: white;
+    font-size: 25px;
+    margin: 12px 0;
+}
+
+.headercontent button {
+    /* padding: 10px; */
+    /* padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+
+    padding: 20px 20px;
+    /* border: 1px solid red; */
+    /* border: 5px dashed red; */
+    /* border: 5px dotted red; */
+    border: none;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+    /* cursor: progress; */
+    /* cursor: move; */
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.headercontent button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.main-heading {
+    color: #f1c522;
+    font-size: 45px;
+    text-align: center;
+    /* text-align: right; */
+    margin-top: 100px;
+    margin-bottom: 0;
+    /* text-align: right; */
+}
+
+.line {
+    height: 1px;
+    background-color: gray;
+    width: 20px;
+}
+
+.heart {
+    color: red;
+    font-size: 40px;
+    margin-top: -10px;
+}
+
+.stylebelowhead {
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-around;
+    margin: auto;
+    width: 7%;
+    align-items: center;
+}
+
+
+.card-img {
+    overflow: hidden;
+    height: 459px;
+    width: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.card-img img {
+    height: inherit;
+    width: 100%;
+    scale: 1;
+    transition: all 0.5s ease-in-out 0.05s;
+}
+
+.card-img img:hover {
+    scale: 1.1;
+    /* width: 320px;
+    height: 475px; */
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: rebeccapurple;
+    /* overflow-y: scroll; */
+    /* overflow: auto; */
+    /* overflow: hidden; */
+}
+
+.card-container .card {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+.card-content {
+    width: 48%;
+    padding: 40px;
+    position: relative;
+
+}
+
+.card-title {
+    font-size: 30px;
+
+}
+
+.card-title span {
+    font-size: 18px;
+}
+
+.card-desc {
+    color: #717275;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    /* word-spacing: 10px; */
+}
+
+.card-container {
+    display: flex;
+}
+
+.card-icons {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    /* border: 1px solid red; */
+    width: 60%;
+    padding: 0;
+    position: absolute;
+    /* top: 40px; */
+    bottom: 20px;
+}
+
+.card-icons li {
+    background-color: #f1c522;
+    padding: 10px;
+    border-radius: 50%;
+    color: black;
+}
+
+.card-icons li:hover {
+    color: white;
+}
+
+.location-card {
+    width: 400px;
+    /* height: 450px; */
+}
+
+.location-card-img {
+    width: 100%;
+    /* height: 270px; */
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.location-card-img img {
+    width: 100%;
+    transition: scale 0.5s ease-in-out 0.05s;
+}
+
+.location-card-img img:hover {
+    scale: 1.2;
+}
+
+.address {
+    margin: 0;
+}
+
+.location-container {
+    display: flex;
+    justify-content: space-around;
+    /*fex-start, flex-end, space-around, center, space-evenly*/
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+}
+
+.tab-main-container {
+    display: flex;
+}
+
+.tabcontainer {
+    width: 30%;
+}
+
+.tabcontents {
+    width: 70%;
+}
+
+.tabimg {
+    width: 415px;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.tabimg img {
+    height: inherit;
+    width: inherit;
+    transition: scale 0.5s ease-in 0.05s;
+}
+
+.tabimg img:hover {
+    scale: 1.2;
+}
+
+.tabcard {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab {
+    font-size: 36px;
+    color: brown;
+}
+
+.tab p {
+    width: 75%;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.tab p:nth-child(1) {
+    border-bottom: 1px solid gray;
+    border-right: 1px solid brown;
+}
+
+.tab p:nth-child(2) {
+    border-right: 1px solid gray;
+}
+
+.menubar {
+    display: none;
+}
+
+.gallery img {
+    border-radius: 20px;
+    transition: scale 0.5s ease-in 0.05s;
+    /* overflow: hidden; */
+}
+
+
+.gallery img:hover {
+    scale: 1.2;
+}
+
+.gallerycontainer {
+    position: relative;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery_card_1 {
+    width: 32%;
+    height: 585px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.gallery_card_1 img {
+    width: 100%;
+}
+
+
+
+.gallery_image_2 img {
+    width: 100%;
+    height: 279px
+}
+
+
+.gallery_card_2 {
+    width: 32%;
+}
+
+.gallery_image_2 {
+    margin-bottom: 21px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+.background_image {
+    background-image: url('rvps.jpg');
+    height: 100%;
+    width: 555px;
+
+}
+
+.popupcontainer {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    /* opacity: 0.8; */
+    /* position: fixed; */
+    /* position: absolute; */
+    position: fixed;
+    z-index: 7;
+    top: 0;
+    left: 0;
+    /* text-align: center; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: none;
+    overflow: hidden;
+}
+
+.popupimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#closepopup {
+    color: red;
+    font-size: 45px;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+
+.popupimg img {
+    /* z-index: 9999999; */
+}
+
+
+
+
+
+
+
+.rsvp-selection {
+    background-image: url(https://www.tooplate.com/templates/2131_wedding_lite/images/closeup-shot-newlywed-couple-sitting-bench.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 150vh;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* bottom: 500px; */
+}
+
+.form {
+    background-color: white;
+    height: 762px;
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    /* bottom: 50x; */
+    top: 100px;
+    border-radius: 20px;
+}
+
+.container input {
+    width: 180px;
+    height: 62px;
+    border-radius: 6px;
+    padding: 0px 0 0 30px;
+    margin-left: 100px;
+}
+select#cars {
+    height: 62px;
+    margin: 62px;
+    width: 180px;
+    border-radius: 6px;
+}
+span#will {
+    margin-left: 100px;
+    font-size: 23px;
+}
+textarea#textarea {
+    margin-left: 100px;
+    border-radius: 6px;
+    width: 720px;
+    font-size: 20px;
+    height: 200px;
+}
+button#send {
+    margin-left: 394px;
+    padding: 17px;
+    font-size: 24px;
+    margin-top: 35px;
+    border-radius: 6px;
+    background-color: #FF5500;
+    color: white;
+}
+
+
+
+ul.card-icons-last a li {
+    list-style: none;
+    /* flex-direction: column; */
+    display: flex;
+    flex-direction: row;
+    background-color: #f1c522;
+    padding: 10px;
+    border-radius: 50%;
+    color: black;
+
+}
+.location-card ul {
+    display: flex;
+    padding: 12px;
+}
+/* 
+
+.backgd {
+    background-image: url('https://www.tooplate.com/templates/2131_wedding_lite/images/young-asian-pregnant-couple-using-laptop.jpeg');
+} */
+
+
+.backgd {
+    background-image: url('https://www.tooplate.com/templates/2131_wedding_lite/images/young-asian-pregnant-couple-using-laptop.jpeg');
+    height: 400px;
+    width: 100%;
+    /* background: repeat no-repeat; */
+    background-size: cover;
+    position: relative;
+}
+
+
+.text {
+    position: absolute;
+    display: flex;
+    left: 43%;
+    top: 200px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1400px) {
+    .location-card {
+        width: 370px;
+    }
+}
+
+@media(max-width: 1290px) {
+    .location-card {
+        width: 330px;
+    }
+}
+
+@media(max-width: 1110px) {
+    .card-container .card {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 774px;
+    }
+
+    .card-content {
+        width: 100%;
+    }
+
+    .main-heading {
+        margin-top: 30px;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card-icons {
+        bottom: -23px;
+        width: 200px;
+    }
+
+    .headercontent h1 {
+        font-size: 45px;
+    }
+
+    .headercontent h2 {
+        font-size: 30px;
+    }
+
+    .stylebelowhead {
+        align-items: center;
+        width: 100px;
+    }
+
+    .location-container {
+        justify-content: center;
+    }
+
+    .location-card {
+        width: 400px;
+        margin: 0 20px;
+    }
+
+}
+
+@media(max-width: 950px) {
+    .container {
+        width: 80%;
+    }
+
+    .navbar {
+        width: 80%;
+    }
+
+    .location-card {
+        width: 95%;
+    }
+
+    .navlinks {
+        display: none;
+        position: fixed;
+        top: 100px;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        height: 50vh;
+        justify-content: space-around;
+    }
+
+    .menubar {
+        display: block;
+    }
+
+    .header {
+        background-size: contain;
+        background-position: bottom;
+        min-height: 650px;
+        padding: 30px;
+    }
+
+    .headercontent h1 {
+        font-size: 45px;
+        margin: 10px 0;
+    }
+
+    .headercontent p {
+        margin: 15px 0;
+    }
+
+    .headercontent {
+        width: 100%;
+    }
+
+    .headercontent div {
+        width: inherit;
+    }
+
+    .calendercontainer {
+        left: 60px;
+
+    }
+
+    .tab-main-container {
+        flex-direction: column;
+    }
+
+    .tabcontainer {
+        width: 100%;
+    }
+
+    .tab p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .tab p:nth-child(1) {
+        border-bottom: 2px solid brown;
+        border-right: 2px dotted gray;
+    }
+
+    .tab p:nth-child(2) {
+        border-bottom: 2px solid gray;
+        border-right: none;
+    }
+
+    .tab {
+        display: flex;
+        /* margin: 20px 0; */
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .tabimg {
+        width: 100%;
+        height: 400px;
+    }
+
+    .tabcontents {
+        width: 100%;
+    }
+
+    .tabcard {
+        flex-direction: column;
+    }
+}
+
+/* @media(max-width: 765px){
+
+} */
+@media(max-width: 450px) {
+    .logo {
+        font-size: 35px;
+    }
+
+    .container {
+        width: 96%;
+    }
+}
